@@ -1,7 +1,13 @@
-# Первый коммит: Базовый вывод приветствия
+# Второй коммит: Добавлена поддержка пользовательского имени
 
-def greet():
-    return "Hello, World!"
+def greet(name=None):
+    if name:
+        return f"Hello, {name}!"
+    else:
+        return "Hello, World!"
+
+# Запрос имени у пользователя
+name_input = input("Enter your name (optional): ").strip()
 
 # Вывод приветствия
-print(greet())
+print(greet(name_input if name_input else None))
