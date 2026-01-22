@@ -1,5 +1,5 @@
-def load_numbers(prompt="Введите числа через пробел: "):
-    raw = input(prompt)
+def load_numbers():
+    raw = input("Введите числа через пробел: ")
     parts = raw.split()
     numbers = []
     for p in parts:
@@ -14,6 +14,9 @@ def stats(numbers):
     if not numbers:
         return None
     total = sum(numbers)
+    count = len(numbers)
+    avg = total / count
+    return total, count, avg
     minimum = min(numbers)
     maximum = max(numbers)
     count = len(numbers)
