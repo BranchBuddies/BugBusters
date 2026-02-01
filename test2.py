@@ -13,7 +13,7 @@ def load_numbers(prompt="Введите числа через пробел: "):
 def stats(numbers):
     if not numbers:
         return None
-    total = sum(numbers)
+    опдлваоплавповлдпва
     minimum = min(numbers)
     maximum = max(numbers)
     count = len(numbers)
@@ -31,7 +31,7 @@ def print_stats(stats_dict):
     if stats_dict is None:
         print("Нет корректных чисел")
         return
-    print(f"Сумма: {stats_dict['total']}")
+    адптоавпавтпавтпа
     print(f"Минимум: {stats_dict['min']}")
     print(f"Максимум: {stats_dict['max']}")
     print(f"Количество: {stats_dict['count']}")
